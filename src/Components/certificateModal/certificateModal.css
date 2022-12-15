@@ -1,0 +1,123 @@
+.modal-certificate-inner-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 6px 6px 0 0;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .modal-certificate-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #042C5C;
+    border-radius: 6px;
+    width: 100%;
+} */
+
+.certi-coomplete-text {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    /* color: #B0B0B0; */
+    color: #989898;
+    line-height: 26px;
+    font-family: Proxima Nova Soft, sans-serif;
+    letter-spacing: 0.2px;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.award-reciever-name {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #EE5C4D;
+    font-family: Proxima Nova Soft, sans-serif;
+    letter-spacing: 0.2px;
+    padding-bottom: 1.5rem;
+}
+
+.award-course-name {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Proxima Nova Soft, sans-serif;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    padding-bottom: 2.5rem;
+}
+
+.joined-completed-time {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: Proxima Nova Soft, sans-serif;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    color: #989898;
+    padding-bottom: 2.5rem;
+}
+
+.ceti-num {
+    font-size: 16px;
+    font-family: Proxima Nova Soft, sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #989898;
+}
+
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-certificate-first-content {
+    display: flex;
+    background: white;
+    flex-direction: row;
+    padding: 3rem 0 0 3rem;
+    border-radius: 6px 6px 0 0;
+}
+
+.modal-certificate-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal-certificate-second-content {
+    display: flex;
+    align-items: center;
+    background-color: #042C5C;
+    padding: 2rem 21.8rem 0 0;
+    border-radius: 0 0 6px 6px;
+}
+
+.certi-icon {
+    position: relative;
+    top: 9.5rem;
+    left: 8rem;
+    width: 90%;
+    height: 60%;
+}
+
+.certi-cancel-icon {
+    position: absolute;
+    top: 13rem;
+    /* left: 6rem; */
+    right: 2rem;
+}

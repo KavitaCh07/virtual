@@ -1,0 +1,118 @@
+.recent-courses-div {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 4px;
+}
+
+.recent-part {
+    display: flex;
+    padding: 1rem;
+}
+
+.recent-added-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+.recent-added-text {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28.8px;
+    font-family: Proxima Nova Soft, sans-serif;
+}
+
+.courses-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 1rem;
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    /* justify-content: space-between; */
+}
+
+.course-name-progress {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    width: 100%;
+    /* align-items: flex-start; */
+    /* justify-content: space-between; */
+}
+
+.py-img {
+    position: relative;
+    display: flex;
+}
+
+.play-btn {
+    position: absolute;
+    top: 1.2rem;
+    left: 3rem;
+    /* right: 1rem; */
+}
+
+.tick-part {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.error-div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-right: 5rem;
+}
+
+.upload-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FF0031;
+}
+
+.cross {
+    display: flex;
+    gap: 1rem;
+    /* padding-right: 1rem; */
+}
+
+.course-name-btn {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.py-course-student {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Proxima Nova Soft, sans-serif;
+    color: #1A1A1A;
+    line-height: 24px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: flex-start;
+}
+
+.course-img{
+    width: 140px;
+    height: 80px;
+}

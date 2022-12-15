@@ -1,0 +1,189 @@
+.certicate-container {
+    display: flex;
+    padding: 0.5rem 2rem 0 1.5rem;
+    flex-direction: column;
+}
+
+.certificate-box {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.0583);
+    position: relative;
+}
+
+.certificate-form-container {
+    display: flex;
+    padding: 1.5rem 2rem;
+}
+
+.certificate-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    align-items: flex-start;
+    gap: 1.7rem;
+    /* background: aliceblue; */
+    /* width: 100%; */
+}
+
+.form-label {
+    font-family: Proxima Nova Soft, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 0.5rem;
+    /* background-color: aqua; */
+}
+
+.input-field {
+    border: 1px solid #D5D4DC;
+    background-color: #FDFDFD;
+    border-radius: 8px;
+    padding: 0.7rem;
+    width: 70%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: Proxima Nova Soft, sans-serif;
+    letter-spacing: 0.2px;
+}
+
+.certificate-footer {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    background-color: #042C5C;
+    flex-direction: column;
+    border-radius: 0 6px 6px 0;
+}
+
+.blue-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 2rem; */
+    padding-top: 2rem;
+}
+
+
+input::placeholder{
+    font-family: Proxima Nova Soft, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #B0B0B0;
+}
+
+.form-2-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: bisque; */
+    width: 50%;
+    /* padding-bottom: 1.5rem; */
+    /* gap: 1.5rem; */
+}
+
+.input-time {
+    width: 90%;
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+}
+
+.first-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.second-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+input.first-input-field {
+    display: flex;
+    width: 70%;
+    border: 1px solid #D5D4DC;
+    background-color: #FDFDFD;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.time {
+    position: relative;
+    top: 0.4rem;
+}
+
+.certificate-label {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0.5rem;
+}
+
+.trophy-photo {
+    position: absolute;
+    top: 13rem;
+    right: 6rem;
+    height: 50%;
+    width: 22%;
+}
+
+.two-buttons {
+    display: flex;
+    /* align-items: flex-end; */
+    flex-direction: row;
+    /* align-items: flex-end; */
+    justify-content: end;
+    padding-top: 2rem;
+    gap: 3rem;
+    padding-right: 2rem;
+}
+
+.preview-button {
+    border: none;
+    background-color: rgba(9, 41, 99, 0.2);
+    border-radius: 6px;
+}
+
+.preview-text {
+    font-size: 18px;
+    font-family: Proxima Nova Soft, sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+    padding: 0.6rem 2rem;
+    color: #092963;
+}
+
+.certificate-save-button {
+    border: none;
+    border-radius: 6px;
+    background-color: #EE5C4D;
+}
+
+span.certificate-save-text {
+    font-size: 18px;
+    font-family: Proxima Nova Soft, sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+    padding: 0.6rem 3rem;
+    color: #FFFFFF;
+}

@@ -1,0 +1,92 @@
+.overlay {
+    position: absolute;
+    background: rgba(49, 49, 49, 0.7);
+    /* height: 89.5vh; */
+    top: 5.7rem;
+    left: 14rem;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: auto;
+    /* align-items: center; */
+    justify-content: center;
+    z-index: 2;
+}
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-inner-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px 10px 0 0;
+    z-index: 3;
+    position: relative;
+}
+
+.delete-video {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: Proxima Nova Soft, sans-serif;
+    padding-bottom: 1rem;
+}
+
+.are-u-sure {
+    font-size: 19px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: Proxima Nova Soft, sans-serif;
+    color: #010101;
+}
+
+.course-name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: Proxima Nova Soft, sans-serif;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.cancel-btn {
+    border: 1.2px solid #D5D4DC;
+    outline: none;
+    display: flex;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.cancel-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+    font-family: Proxima Nova Soft, sans-serif;
+    padding: 0rem 3rem;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #09296333;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    display: flex;
+}
+
+.delete-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+    font-family: Proxima Nova Soft, sans-serif;
+    padding: 0.1rem 3rem;
+    cursor: pointer;
+}

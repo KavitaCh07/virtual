@@ -1,0 +1,61 @@
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10%;
+  height: 35%;
+  width: 100%;
+}
+.dashboard-sidebutton {
+  cursor: pointer;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  border-radius: 18px;
+}
+.Addcourses-sidebutton {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 20%;
+
+  border-radius: 18px;
+}
+.StudentsList-sidebutton {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 20%;
+
+  border-radius: 18px;
+}
+.sidebutton-text {
+  margin-left: 10%;
+  width: 104px;
+  height: 22px;
+  left: calc(50% - 104px / 2 + 31.5px);
+  top: 2px;
+  font-family: "Proxima Nova Soft", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #232323;
+}
+
+.Dashsidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 300px;
+  background-color: white;
+ 
+}

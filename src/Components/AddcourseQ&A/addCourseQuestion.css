@@ -1,0 +1,326 @@
+.add-course-part {
+    display: flex;
+    padding: 1rem 2rem 0 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.first-card {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    border-radius: 8px;
+    /* width: 100%; */
+}
+
+.select-chapter {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    font-family: Proxima Nova Soft, sans-serif;
+    padding-bottom: 0.7rem;
+}
+
+.drop-menu {
+    border: 1px solid #D5D4DC;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    width: 35rem;
+    gap: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-family: Proxima Nova Soft, sans-serif;
+}
+
+.dropdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.second-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.add-question-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.question-text {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    font-family: Proxima Nova Soft, sans-serif;
+    color: #989898;
+}
+
+.input-question {
+    display: flex;
+    width: 100%;
+}
+
+.load-text {
+    font-size: 18px;
+    font-family: Proxima Nova Soft, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    color: #2B2B2B;
+    width: 100%;
+}
+
+.load-balance-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.delete-minus {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.multiple-question-part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.line-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* width: 100%; */
+    justify-content: space-between;
+}
+
+.multipleQ1 {
+    display: flex;
+    border: 1px solid #D5D4DC;
+    padding: 1.5rem 1rem;
+    border-radius: 4px;
+    width: 50%;
+    justify-content: space-between;
+    background-color: #FDFDFD;
+}
+
+.ques1-choice {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.ques1 {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-family: Proxima Nova Soft, sans-serif;
+    width: 90%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 1px;
+    bottom:0.767px;
+    background-color: #E6E6E6;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+ 
+  
+  input:checked + .slider {
+    background-color: white;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    border: 1px solid rgba(102, 102, 102, 0.16);
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .line-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* width: 100%; */
+    justify-content: space-between;
+}
+
+.third-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+.load-balance-row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.pages-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.prev-btn {
+    border: none;
+    background-color: #DFE2E9;
+    padding: 0.5rem 1rem;
+}
+.prev-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.2px;
+    font-family: Proxima Nova, sans-serif;
+    color: #092963;
+    /* padding: 1rem; */
+}
+
+.next-btn {
+    border: none;
+    background-color: #DFE2E9;
+    padding: 0.5rem 1rem;
+}
+
+.next-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.2px;
+    font-family: Proxima Nova, sans-serif;
+    color: #092963;
+}
+
+.save-btn {
+    border: none;
+    background-color: #EE5C4D;
+    padding: 0.3rem 4rem;
+    border-radius: 6px;
+}
+
+.save-text {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Proxima Nova Soft, sans-serif;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+.fourth-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30%;
+}
+
+.page-numberes {
+    display: flex;
+    align-items: center;
+    color: #092963;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Proxima Nova, sans-serif;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+}
+
+.add-more-btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* left: 56rem; */
+    bottom: 3.9rem;
+}
+
+.add-new-btn {
+    background-color: rgba(9, 41, 99, 0.11);
+    border: none;
+    padding: 0.4rem 0.4rem;
+}
+
+.add-new-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #092963;
+    line-height: 30px;
+    font-family: Proxima Nova Soft, sans-serif;
+}
+  

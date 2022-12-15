@@ -1,0 +1,35 @@
+.tabs-div-bar {
+  display: flex;
+  /* width: 100%; */
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+  gap: 4rem;
+}
+
+.tab {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.8px;
+  font-family: Proxima Nova Soft, sans-serif;
+  color: #B0B0B0;
+}
+
+a{
+  all: unset;
+  cursor: pointer;
+}
+
+.active {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28.8px;
+  font-family: Proxima Nova Soft, sans-serif;
+  color: #232323;
+  border-bottom: 2px solid #EE5C4D;
+  padding-bottom: 0.5rem;
+}

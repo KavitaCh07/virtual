@@ -1,0 +1,132 @@
+.registration {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #092963;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 634px;
+  left: 660px;
+  top: 223px;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.Verification-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.verification {
+  height: 35px;
+  left: 43.65%;
+  right: 43.59%;
+  margin-top: 7%;
+  font-family: "Proxima Nova Soft";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  text-align: center;
+  color: #092963;
+}
+.verification-desc {
+  margin-top: 5%;
+}
+.verify-button {
+  margin-top: 10%;
+  margin-left: 5%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  height: 44px;
+  width: 91%;
+  color: white;
+  outline: none;
+  border: none;
+  background: #ee5c4d;
+  border-radius: 6px;
+  font-family: "Proxima Nova Soft";
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+#divInner {
+  left: 0;
+  position: sticky;
+  margin-bottom: 6px;
+}
+
+#divOuter {
+  width: 190px;
+  overflow: hidden;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+
+.otpErrorMessage{
+  display: flex;
+  color: red;
+  font-size: 16px;
+  align-items: center;
+  margin-left: 2rem;
+  font-family: Avenir, sans-serif;
+}
+
+#partitioned {
+  padding-left: 15px;
+  letter-spacing: 38px;
+  border: 0;
+  /* color: red; */
+  background-image: linear-gradient(
+    to left,
+    #072D5B 70%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  width: 220px;
+  min-width: 220px;
+}
+.verify-otp{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.32px;
+  letter-spacing: 0.4px;
+  font-family: Avenir, sans-serif;
+}
+
+.didnt-recieve {
+  margin-top: 5%;
+  font-family: "Proxima Nova Soft";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height, or 130% */
+
+  text-align: center;
+
+  color: #6b7fa1;
+}
+
+.resend-button {
+  color: #ee5c4d;
+  cursor: pointer;
+}

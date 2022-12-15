@@ -1,0 +1,401 @@
+.Dash-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    height: auto;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .dashboard-text {
+    margin-left: 1%;
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #292929;
+  }
+  
+  .dashuser-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 132.59px;
+    height: 75px;
+  
+    margin-right: 1%;
+  }
+  .user-img {
+    width: 57.25px;
+    height: 57px;
+    background: #fabb18;
+    border-radius: 65px;
+  }
+  .user-name {
+    width: 103px;
+    height: 19px;
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #292929;
+  }
+  
+  .sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    height: 35%;
+    width: 100%;
+  }
+  .dashboard-sidebutton {
+    cursor: pointer;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    border-radius: 18px;
+  }
+  .Addcourses-sidebutton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 20%;
+  
+    border-radius: 18px;
+  }
+  .StudentsList-sidebutton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 20%;
+  
+    border-radius: 18px;
+  }
+  .sidebutton-text {
+    margin-left: 10%;
+    width: 104px;
+    height: 22px;
+    left: calc(50% - 104px / 2 + 31.5px);
+    top: 2px;
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #232323;
+  }
+  .dashboard-today-details {
+    height: auto;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .Today-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 30%;
+    height: 80%;
+    margin-left: 2%;
+  }
+  
+  .Today {
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    color: #292929;
+  }
+  .today-time {
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #292929;
+  }
+  .recentlyaddedsummary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 80%;
+    margin-right: 5%;
+    width: 516px;
+    box-shadow: 0px 16px 31px rgba(0, 0, 0, 0.01);
+    border-radius: 34px;
+  }
+  .recently-added-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 2%;
+    height: 20%;
+  }
+  .recently-added-text {
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #292929;
+  }
+
+  .viewAll {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: Proxima Nova Soft, sans-serif;
+    color: #2831FF;
+    text-decoration: underline;
+  }
+  
+  .recentlyaddedsummaryvideos-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 90%;
+    height: 30%;
+  }
+  .recentlyaddedsummaryvideodetails-div {
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .recentlyaddedvideo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 32px;
+  }
+  .recentlyaddedsummaryprogressvideos-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 90%;
+    height: 30%;
+  }
+  
+  .recentlyaddedprogressvideo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 32px;
+  }
+  
+  .recentlyaddedsummaryprogressvideodetails-div {
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+    display: flex;
+  }
+  .playsmallbutton {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+  }
+  .recentlyaddedvideoname {
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 70%;
+  
+    line-height: 30px;
+    color: #292929;
+  }
+  .recentlyaddeddelete-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .recentlyaddedvideoprogressname {
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #292929;
+  }
+  .recentlyaddedvideoprogressbar {
+    display: flex;
+    width: 100%;
+    height: 3px;
+    background: #dfdfdf;
+    border-radius: 10px;
+  }
+  .recentlyaddedprogressdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+  .recentlyaddedvideoprogressbarongoing {
+    width: 60%;
+    height: 3px;
+    background: #ee5c4d;
+    border-radius: 10px;
+  }
+  
+  .Totaldetails-div {
+    height: auto;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .dashTotalStudents-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 130px;
+  
+    width: 470px;
+    box-shadow: 0px 16px 31px rgba(0, 0, 0, 0.01);
+    border-radius: 34px;
+  }
+  .totalstudents-text {
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+  
+    color: #292929;
+  }
+  
+  .totalstudents-count {
+    margin-top: 3%;
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    width: 60%;
+    color: #292929;
+  }
+  .dashTotalstudents {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .totalstudents-icon {
+    margin-right: 5%;
+  }
+  
+  .dashOverallresults-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 130px;
+  
+    width: 470px;
+    box-shadow: 0px 16px 31px rgba(0, 0, 0, 0.01);
+    border-radius: 34px;
+  }
+  .Overallresults-text {
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+  
+    color: #292929;
+  }
+  
+  .Overallresults-count {
+    margin-top: 3%;
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    width: 60%;
+    color: #292929;
+  }
+  .dashOverallresults {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .Overallresults-icon {
+    margin-right: 5%;
+  }
+  
+  .dashTotalCourses-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 130px;
+    width: 470px;
+    box-shadow: 0px 16px 31px rgba(0, 0, 0, 0.01);
+    border-radius: 34px;
+  }
+  .totalCourses-text {
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+  
+    color: #292929;
+  }
+  
+  .totalCourses-count {
+    margin-top: 3%;
+    font-family: "Proxima Nova Soft", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    width: 60%;
+    color: #292929;
+  }
+  .dashTotalCourses {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .totalCourses-icon {
+    margin-right: 5%;
+  }
+  
