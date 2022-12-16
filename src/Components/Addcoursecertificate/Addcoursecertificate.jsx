@@ -74,7 +74,7 @@ console.log("cert",certificateid);
   const dispatch = useDispatch();
   const [certificatePreviewModal, setCertificatePreviewModal] = useState(false);
   const certificateData = useSelector(AddCertificate);
-  console.log(certificateData);
+  console.log("certi data",certificateData);
 
   return (
     <div className='certicate-container'>

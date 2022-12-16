@@ -51,12 +51,15 @@
     border-radius: 8px;
     align-items: flex-start;
     padding: 2rem;
+    margin-bottom: 2rem;
+    /* gap: 1rem; */
 }
 
 .add-question-form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 2rem;
 }
 
 .question-text {

@@ -10,102 +10,87 @@ export default function Addcoursequestion() {
     const [deleteQuestion, setDeleteQuestion] = useState(false);
     const [deleteMultilpe, setDeleteMultiple] = useState(false);
     const [plusMinusIcon, setPlusMinusIcon] = useState(false);
+    const [questionForm, setQuestionForm] = useState([{ question: "", multipleChoice1: "", multipleChoice2: "", multipleChoice3: "", multipleChoice4: "" }]);
 
-    function handleQuestionDiv(){
-        document.getElementById("questionCard").style.display === "none" ?
-        (document.getElementById("questionCard").style.display = "flex") :
-        (document.getElementById("questionCard").style.display = "none");
+    const handleFormChange = (index, event) => {
+        let data = [...questionForm];
+        data[index][event.target.name] = event.target.value;
+        setQuestionForm(data);
+        console.log(questionForm);
     }
 
-    function handlePluseMinusIcon(){
-        setPlusMinusIcon(!plusMinusIcon);
+    const addForm = () => {
+        let newForm = { question: "", multipleChoice1: "", multipleChoice2: "", multipleChoice3: "", multipleChoice4: "" }
+        setQuestionForm([...questionForm, newForm])
     }
 
-    function handleMultipleQuestion(){
-        document.getElementById("multipleQuestionDiv").style.display === "none" ? 
-        (document.getElementById("multipleQuestionDiv").style.display = "flex") :
-        (document.getElementById("multipleQuestionDiv").style.display = "none");
+    const submit = (e) => {
+        e.preventDefault();
+        console.log("form on submit", questionForm);
     }
 
-    function handleDelete(){
-        document.getElementById("questionCard").style.display === "flex" ? 
-        (document.getElementById("questionCard").style.display = "none") :
-        (document.getElementById("questionCard").style.display = "flex");
+    const RemoveForm = (index) => {
+        let data = [...questionForm];
+        data.splice(index, 1)
+        setQuestionForm(data);
     }
 
-    let count=0;
+
+
+    let count = 0;
 
     return (
         <div className='add-course-part'>
 
-            <div className="add-more-btn"><button className='add-new-btn' onClick={()=>{handleQuestionDiv();}}><span className='add-new-text'>Add New +</span></button></div>
+            <div className="add-more-btn"><button className='add-new-btn' onClick={addForm}><span className='add-new-text'>Add New +</span></button></div>
 
-            <div className="first-card">
-                <div className="select-chapter">Select Chapter Name</div>
-                <div className="dropdown">
-                    <select name="plan" id="plan" className='drop-menu'>
-                        <option className='options' value="free" selected>Chapter 1 - Setting up a new project</option>
-                        <option className='options' value="starter">Chapter 2 - Write 1st Program</option>
-                        <option className='options' value="professional">Chapter 3 - Start with data types</option>
-                        <option className='options' value="corporate">Chapter 4 - Start with loops</option>
-                    </select>
-                    <div>1 of 44</div>
-                </div>
-            </div>
-
-            <div className="second-card" id='questionCard' style={{ display: "none" }}>
+            <div className="add-question-answer-form">
                 <form action="" className='add-question-form'>
-                <div className="question-text">Question {++count}</div>
 
-                <div className="load-balance-row">
-                    <div className="input-question"> <input type="text" className='load-text' placeholder='enter the question' /></div>
-                    <div className=' delete-minus'>
-                        <img src={deleteCourse} alt="" onClick={()=>{handleDelete();}} />
-                        <img src={plusMinusIcon ? minus : pluse} alt=""  onClick={()=>{handlePluseMinusIcon(); handleMultipleQuestion();}}/>
-                    </div>
-                </div>
-
-                <div className="multiple-question-part" id='multipleQuestionDiv' style={{ display: "none" }}>
-                    <div className="line-1">
-
-                        <div className="multipleQ1">
-                            <div className="ques1-choice"><input type="text" className="ques1" placeholder='enter 1st choice'/></div>
-                            <div className="check-box"><label class="switch">
-                                <input type="checkbox" />
-                                <span class="slider round"></span>
-                            </label></div>
-                        </div>
-
-                        <div className="multipleQ1">
-                            <div className="ques1-choice"><input type="text" className="ques1" placeholder='enter 2nd choice'/></div>
-                            <div className="check-box"><label class="switch">
-                                <input type="checkbox" />
-                                <span class="slider round"></span>
-                            </label></div>
-                        </div>
-
-                    </div>
-
-                    <div className="line-2">
-                        <div className="multipleQ1">
-                            <div className="ques1-choice"><input type="text" className="ques1" placeholder='enter 3rd choice'/></div>
-                            <div className="check-box"><label class="switch">
-                                <input type="checkbox" />
-                                <span class="slider round"></span>
-                            </label></div></div>
-
-                        <div className="multipleQ1">
-                            <div className="ques1-choice"><input type="text" className="ques1" placeholder='enter 4th choice'/></div>
-                            <div className="check-box"><label class="switch">
-                                <input type="checkbox" />
-                                <span class="slider round"></span>
-                            </label></div>
+                    <div className="first-card">
+                        <div className="select-chapter">Select Chapter Name</div>
+                        <div className="dropdown">
+                            <select name="plan" id="plan" className='drop-menu'>
+                                <option className='options' value="free" selected>Chapter 1 - Setting up a new project</option>
+                                <option className='options' value="starter">Chapter 2 - Write 1st Program</option>
+                                <option className='options' value="professional">Chapter 3 - Start with data types</option>
+                                <option className='options' value="corporate">Chapter 4 - Start with loops</option>
+                            </select>
+                            <div>1 of 44</div>
                         </div>
                     </div>
 
-                </div>
+
+                    <div className="question-answer-ka-part">
+                        {questionForm.map((input, index) => {
+                            return (
+                                <div className="second-card" id='questionCard' key={index}>
+                                    <div className="question-text">Question {++count}</div>
+
+                                    <div className="load-balance-row">
+                                        <div className="input-question"><input type="text" name='question' className='load-text' placeholder='enter the question' /></div>
+                                        <div className=' delete-minus'>
+                                            <img src={deleteCourse} alt="" onClick={()=> {RemoveForm(index)}}/>
+                                            <img src={plusMinusIcon ? minus : pluse} alt="" />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            );
+                        })}
+                    </div>
+
+
+
                 </form>
             </div>
+
+
+
+
+
 
             <div className="fourth-card">
                 <div className="pages-btns">
@@ -115,7 +100,7 @@ export default function Addcoursequestion() {
                         1 2 3 4 5 6 7 8 9 10</div>
                     <button className='next-btn'><span className='next-text'>Next</span></button>
                 </div>
-                <button className='save-btn'><span className='save-text'>save</span></button>
+                <button className='save-btn' form='questionForm' onClick={submit}><span className='save-text'>save</span></button>
             </div>
         </div>
     )
