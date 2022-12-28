@@ -68,7 +68,7 @@ export default function Addcoursequestion() {
                                     <div className="question-text">Question {++count}</div>
 
                                     <div className="load-balance-row">
-                                        <div className="input-question"><input type="text" name='question' className='load-text' placeholder='enter the question' /></div>
+                                        <div className="input-question"><input type="text" name='questionName' className='load-text' placeholder='enter the question' /></div>
                                         <div className=' delete-minus'>
                                             <img src={deleteCourse} alt="" onClick={()=> {RemoveForm(index)}}/>
                                             <img src={plusMinusIcon ? minus : pluse} alt="" />
